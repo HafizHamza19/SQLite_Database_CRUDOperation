@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:text="Student Registration"/>
+        <EditText
+            android:id="@+id/id_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"/>
+        <EditText
+            android:id="@+id/id_FatherName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Father Name"/>
+        <EditText
+            android:id="@+id/id_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"/>
+        <EditText
+            android:id="@+id/id_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"/>
+        <Spinner
+            android:id="@+id/id_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"/>
+        <EditText
+            android:id="@+id/id_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="state"/>
+        <EditText
+            android:id="@+id/id_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"/>
+<LinearLayout
+    android:id="@+id/id_searchbox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="For Search"
+        />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"/>
+        <EditText
+            android:id="@+id/id_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Enter Roll No For Search"/>
+        <TextView
+            android:id="@+id/id_record_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"/>
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+
+            android:layout_weight="100">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="20"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:onClick="save"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="20"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Update"
+            android:onClick="update"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="20"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:text="Delete"
+            android:onClick="deleteProduct"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="20"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+android:textAllCaps="false"
+            android:text="Search"
+            android:onClick="select"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>
